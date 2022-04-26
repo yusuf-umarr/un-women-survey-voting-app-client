@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+.work-book-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work-book {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.work-book-bottom {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.work-book-bottom-tap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 3em; */
+}
+.work-book-tap-text {
+  display: flex;
+  padding: 0.7em 1em;
+  background-color: var(--blueBgColor);
+  border-radius: 2em;
+  margin-right: 3em;
+}
+.work-book-tap-text > span {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.work-book-tap-text-off {
+  display: flex;
+  padding: 0.7em 1em;
+  background-color: #fff;
+  border-radius: 2em;
+  /* margin-right: 3em; */
+}
+
+.work-book-tap-text-off > span {
+  font-size: 1.5em;
+  color: var(--greyColor);
+}
+.work-book-bottom > h4 {
+  font-size: 1.9em;
+  color: #000;
+  font-weight: 600;
+}
+.work-book-bottom > span {
+  font-size: 1.2em;
+  color: var(--textGreyColor);
+  font-weight: 300;
+  margin-top: 1em;
+}
+.work-book-response-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 3em;
+}
+.work-book-response-A {
+  display: flex;
+  margin-right: 1.5em;
+}
+.work-book-response-A > span {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: var(--blueBgColor);
+}
+.work-book-response-A > input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--blueBgColor);
+  margin-left: 0.5em;
+  width: 200px;
+  font-size: 1.5em;
+  padding-left: 0.5em;
+}
+.work-book-response-B {
+  display: flex;
+}
+.work-book-response-B > span {
+  font-size: 1.5em;
+  color: #000;
+  font-weight: 500;
+}
+.work-book-response-B > input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--blueBgColor);
+  margin-left: 0.5em;
+  width: 200px;
+  font-size: 1.5em;
+  padding-left: 0.5em;
+}
+
+.work-book-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6em;
+  background-color: var(--blueBgColor);
+  width: 150px;
+  border-radius: 0.5em;
+  margin-top: 4em;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+}
+.work-book-btn > button {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4em;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.work-book-modal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.work-book-modal > span {
+  color: var(--blueBgColor);
+  font-size: 1.2em;
+  margin: 1.3em 0;
+}
+.go-to-plenary-btn {
+  padding: 0.5em;
+  background-color: var(--blueBgColor);
+  border-radius: 0.5em;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.go-to-plenary-btn > span {
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .work-book {
+    width: 100%;
+  }
+  .work-book-tap-text > span,
+  .work-book-tap-text-off > span {
+    font-size: 0.8em;
+  }
+  .work-book-tap-text,
+  .work-book-tap-text-off {
+    margin-right: 0;
+  }
+  .work-book-bottom > h4 {
+    font-size: 1em;
+  }
+  .work-book-bottom > span {
+    font-size: 0.9em;
+  }
+  .work-book-response-container {
+    flex-direction: column;
+  }
+  .work-book-response-A {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  .work-book-response-A > span,
+  .work-book-response-B > span {
+    font-size: 1em;
+  }
+  .work-book-response-A > input,
+  .work-book-response-B > input {
+    font-size: 0.9em;
+  }
+}
+
+.responsedata {
+  margin: 1em;
+}

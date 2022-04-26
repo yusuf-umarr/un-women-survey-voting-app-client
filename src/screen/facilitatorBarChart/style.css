@@ -1,0 +1,49 @@
+.facilitator-bar-chart-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3em;
+}
+
+.facilitator-bar-chart {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.facilitator-bar-chat-top {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  width: 80%;
+}
+
+.facilitator-bar-chat-top > span {
+  color: var(--blueBgColor);
+  margin: 1em 0;
+}
+.create-poll-btn {
+  display: flex;
+  width: 150px;
+  border-radius: 0.3em;
+  background-color: var(--blueBgColor);
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  cursor: pointer;
+}
+.create-poll-btn > span {
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .facilitator-bar-chart {
+    width: 100%;
+  }
+  .facilitator-bar-chat-top > span {
+    font-size: 0.8em;
+  }
+}

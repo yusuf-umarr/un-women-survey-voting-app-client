@@ -1,0 +1,68 @@
+.facilitator-poll-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.facilitator-poll {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.facilitator-poll-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+.facilitator-poll-top > span {
+  color: var(--blueBgColor);
+}
+
+.faccilitator-poll-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.facilitator-check-box-container {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  margin-bottom: 1em;
+  cursor: pointer;
+  flex-direction: row;
+  /* background-color: var(--blueBgColor); */
+}
+.facilcitator-check-box {
+  /* width: 15px; */
+  height: 15px;
+  transform: scale(1.5);
+}
+.poll-btn-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  margin-top: 2em;
+}
+.poll-btn-container > div {
+  margin-right: 2em;
+}
+.fa-poll-result {
+  margin-top: 2em;
+}
+.fa-poll-result > span {
+  color: var(--blueBgColor);
+  font-size: 1.2em;
+}
+@media screen and (max-width: 800px) {
+  .facilitator-poll {
+    width: 100%;
+  }
+}
